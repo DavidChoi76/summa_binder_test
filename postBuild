@@ -1,7 +1,7 @@
 git clone -b develop https://github.com/UW-Hydro/pysumma.git; cd pysumma; pip install .
 cd ..; git clone -b develop https://github.com/NCAR/summa.git
 export F_MASTER=/home/jovyan/summa
-make -f ${F_MASTER}/build/Makefile
+make -f ${F_MASTER}/build/summaMakefile
 
 #export NCDF_PATH=/usr
 #export LAPK_PATH=/usr
