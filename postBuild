@@ -19,4 +19,4 @@ export FC_EXE=/usr/bin/gfortran-6
 export FC_ENV=gfortran-6-travis
 #export INCLUDES='-I/usr/include -I/usr/include'
 #export LIBRARIES='-L/usr/lib -lnetcdff -L/usr/lib -lblas -llapack'
-make -f ${F_MASTER}/build/Makefile
+#make -f ${F_MASTER}/build/Makefile
