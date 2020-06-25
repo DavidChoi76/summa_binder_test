@@ -10,8 +10,8 @@ export LAPK_PATH=/usr
 
 git clone https://github.com/NCAR/summa.git \
   && cd summa && git checkout develop \
-  && cd build && sed -i 's/##INCLUDES =/##INCLUDES = -I$(NCDF_PATH)/include/g' Makefile \
-  && sed -i 's/##LIBRARIES =/##LIBRARIES = -L$(NCDF_PATH)/lib -lnetcdff -L$(LAPK_PATH)/lib -llapack -lblas -latlas/g' Makefile
+  && cd build && sed -i 's/##INCLUDES =/##INCLUDES = -I$(NCDF_PATH)\/include/g' Makefile \
+  && sed -i 's/##LIBRARIES =/##LIBRARIES = -L$(NCDF_PATH)\/lib -lnetcdff -L$(LAPK_PATH)\/lib -llapack -lblas -latlas/g' Makefile
 
 cd summa && git checkout develop
 export F_MASTER=/home/jovyan/summa
