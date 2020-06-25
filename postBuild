@@ -2,15 +2,14 @@ source activate pysumma
 python -m ipykernel install --user --name pysumma
 jupyter labextension install @pyviz/jupyterlab_pyviz
 
-git clone https://github.com/UW-Hydro/pysumma.git \
-  && cd pysumma && git checkout develop && pip install .
+git clone -b develop https://github.com/UW-Hydro/pysumma.git \
+  && cd pysumma && pip install .
   
 export NCDF_PATH=/usr
 export LAPK_PATH=/usr
 
-git clone https://github.com/NCAR/summa.git \
-  && cd summa && git checkout develop
-cd build && sed -i 's/##INCLUDES =/##INCLUDES = -I$(NCDF_PATH)\/include/g' Makefile \
+git clone -b develop https://github.com/NCAR/summa.git \
+  && cd summa/build && sed -i 's/##INCLUDES =/##INCLUDES = -I$(NCDF_PATH)\/include/g' Makefile \
   && sed -i 's/##LIBRARIES =/##LIBRARIES = -L$(NCDF_PATH)\/lib -lnetcdff -L$(LAPK_PATH)\/lib -llapack -lblas -latlas/g' Makefile
 
 export F_MASTER=/home/jovyan/summa
