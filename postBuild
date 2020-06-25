@@ -1,6 +1,6 @@
-source activate pysumma
-python -m ipykernel install --user --name pysumma
-jupyter labextension install @pyviz/jupyterlab_pyviz
+#source activate pysumma
+#python -m ipykernel install --user --name pysumma
+#jupyter labextension install @pyviz/jupyterlab_pyviz
 
 git clone -b develop https://github.com/UW-Hydro/pysumma.git \
   && cd pysumma && pip install .
