@@ -1,2 +1,2 @@
 git clone -b develop https://github.com/UW-Hydro/pysumma.git; cd pysumma; pip install .
-git clone -b develop https://github.com/NCAR/summa.git
+cd ..; git clone -b develop https://github.com/NCAR/summa.git
