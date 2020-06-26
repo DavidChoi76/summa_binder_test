@@ -1,3 +1,5 @@
+update 
+install -y --no-install-recommends
 software-properties-common
 ca-certificates
 git
@@ -7,5 +9,5 @@ liblapack-dev
 vim
 zip
 unzip
-gfortran
-mpich
+gfortran-6
+update
