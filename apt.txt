@@ -1,4 +1,4 @@
-update
+install -y --no-install-recommends
 software-properties-common
 ca-certificates
 git
@@ -9,4 +9,4 @@ vim
 zip
 unzip
 gfortran-6
-update
+
