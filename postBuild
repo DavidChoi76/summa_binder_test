@@ -1,13 +1,24 @@
 git clone -b develop https://github.com/UW-Hydro/pysumma.git; cd pysumma; pip install .
 cd ..; git clone -b develop https://github.com/NCAR/summa.git
-#mv /home/jovyan/summaMakefile /home/jovyan/summa/build
+cd summa; git checkout a3a840b139d80f645fe5acf31d32baad462a899b
+cd build && sed -i 's/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP)/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP) $(INCLUDES)/g' Makefile \
+#	 && sed -i 's/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL)/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL) $(INCLUDES)/g' Makefile
 export F_MASTER=/home/jovyan/summa
+export FC=gfortran
+export FC_EXE=/usr/bin/gfortran-6
+export INCLUDES='-I/usr/include'
+export LIBRARIES='-L/usr/lib -lnetcdff -lblas -llapack'
+make -f ${F_MASTER}/build/Makefile
+
+
+#mv /home/jovyan/summaMakefile /home/jovyan/summa/build
+#export F_MASTER=/home/jovyan/summa
 #make -f ${F_MASTER}/build/summaMakefile
 
 #export NCDF_PATH=/usr
 #export LAPK_PATH=/usr
-#cd summa/build && sed -i 's/##INCLUDES =/INCLUDES = -I$(NCDF_PATH)\/include/g' Makefile \
-#	 && sed -i 's/##LIBRARIES =/LIBRARIES = -L$(NCDF_PATH)\/lib -lnetcdff -L$(LAPK_PATH)\/lib -llapack -lblas -latlas/g' Makefile
+#cd summa/build && sed -i 's/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP)/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP) $(INCLUDES)/g' Makefile \
+#	 && sed -i 's/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL)/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL) $(INCLUDES)/g' Makefile
 #export F_MASTER=/home/jovyan/summa
 #export FC=gfortran
 #export FC_EXE=/usr/bin/gfortran
