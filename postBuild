@@ -2,7 +2,7 @@ git clone -b develop https://github.com/UW-Hydro/pysumma.git; cd pysumma; pip in
 cd ..; git clone -b develop https://github.com/NCAR/summa.git
 cd summa; git checkout a3a840b139d80f645fe5acf31d32baad462a899b
 cd build && sed -i 's/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP)/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP) $(INCLUDES)/g' Makefile \
-#	 && sed -i 's/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL)/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL) $(INCLUDES)/g' Makefile
+	 && sed -i 's/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL)/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL) $(INCLUDES)/g' Makefile
 export F_MASTER=/home/jovyan/summa
 export FC=gfortran
 export FC_EXE=/usr/bin/gfortran-6
