@@ -1,5 +1,4 @@
-update 
-install -y --no-install-recommends
+update
 software-properties-common
 ca-certificates
 git
