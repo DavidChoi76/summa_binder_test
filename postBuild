@@ -9,19 +9,3 @@ export FC_EXE=/usr/bin/gfortran-6
 export INCLUDES='-I/usr/include'
 export LIBRARIES='-L/usr/lib -lnetcdff -lblas -llapack'
 make -f ${F_MASTER}/build/Makefile
-
-
-#mv /home/jovyan/summaMakefile /home/jovyan/summa/build
-#export F_MASTER=/home/jovyan/summa
-#make -f ${F_MASTER}/build/summaMakefile
-
-#export NCDF_PATH=/usr
-#export LAPK_PATH=/usr
-#cd summa/build && sed -i 's/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP)/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP) $(INCLUDES)/g' Makefile \
-#	 && sed -i 's/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL)/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL) $(INCLUDES)/g' Makefile
-#export F_MASTER=/home/jovyan/summa
-#export FC=gfortran
-#export FC_EXE=/usr/bin/gfortran
-#export INCLUDES='-I/usr/include'
-#export LIBRARIES='-L/usr/lib -lnetcdff -lblas -llapack'
-#make -f ${F_MASTER}/build/Makefile
