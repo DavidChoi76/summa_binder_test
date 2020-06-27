@@ -8,3 +8,4 @@ vim
 zip
 unzip
 gfortran-6
+graphviz
