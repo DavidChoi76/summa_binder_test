@@ -24,8 +24,9 @@ set -x
 # install jupyter labextensions
 jupyter labextension install --clean \
     @jupyter-widgets/jupyterlab-manager \
-    dask-labextension
-
+    dask-labextension \
+    @jupyterlab/geojson-extension jupyterlab-drawio
+    
 # add dask config
 mkdir -p ${KERNEL_PYTHON_PREFIX}/dask
 cd ../..
