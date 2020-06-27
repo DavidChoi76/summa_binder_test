@@ -27,5 +27,6 @@ jupyter labextension install --clean \
     dask-labextension
 
 # add dask config
-mkdir -p ${KERNEL_PYTHON_PREFIX}/etc/dask
-cp .binder/dask_config.yaml ${KERNEL_PYTHON_PREFIX}/etc/dask/dask.yaml
+mkdir -p ${KERNEL_PYTHON_PREFIX}/dask
+cd ../..
+cp dask_config.yaml ${KERNEL_PYTHON_PREFIX}/dask/dask.yaml
