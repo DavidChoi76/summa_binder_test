@@ -22,8 +22,8 @@ jupyter labextension install dask-labextension@1.1.0
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install @bokeh/jupyter_bokeh
 
-set -e
-set -x
+#set -e
+#set -x
 
 # install jupyter labextensions
 #jupyter labextension install --clean \
