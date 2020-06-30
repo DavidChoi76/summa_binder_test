@@ -18,6 +18,7 @@ export LIBRARIES='-L/usr/lib -lnetcdff -lblas -llapack'
 ## build from Makefile
 make -f ${F_MASTER}/build/Makefile
 
+# Install the JupyterLab dask-labextension
 jupyter labextension install dask-labextension@1.1.0
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install @bokeh/jupyter_bokeh
