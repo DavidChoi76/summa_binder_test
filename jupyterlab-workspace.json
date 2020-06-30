@@ -78,7 +78,7 @@
       }
     },
     "dask-dashboard-launcher": {
-      "url": "/user/davidchoi76-summa_binder_test-cf1ya63c/proxy/8787",
+      "url": "DASK_DASHBOARD_URL",
       "cluster": ""
     },
     "notebook:SUMMA_Simulation.ipynb": {
