@@ -2,15 +2,15 @@ name: pysumma
 channels:
   - conda-forge
 dependencies:
-  - python>=3.5
+  - python>=3.7
   - xarray>=0.11.0
   - pandas
   - jupyterlab=1.*
   - netcdf4>=1.2.5
   - numpy>=1.11.2
-  - dask
-  - dask-labextension
-  - distributed
+  - dask=2.11.0
+  - dask-labextension=1.1.0
+  - distributed=2.11.0
   - notebook
   - toolz
   - pytest
@@ -20,10 +20,10 @@ dependencies:
   - seaborn
   - matplotlib
   - geopandas
-  - traitlets>=4.3.1
   - ipython
-  - vdom
-  - jupyterlab_launcher
+  - ipywidgets>=7.5
+  - python-graphviz
   - pip
+  - dask-ml
   - pip:
     - hs_restclient
