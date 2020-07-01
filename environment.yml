@@ -11,6 +11,7 @@ dependencies:
   - dask=2.11.0
   - dask-labextension=1.1.0
   - distributed=2.11.0
+  - dask_jobqueue
   - notebook
   - toolz
   - pytest
