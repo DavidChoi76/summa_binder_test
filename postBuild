@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## clone pysumma and summa and switch to develop branch
-git clone -b develop https://github.com/arbennett/pysumma.git; cd pysumma; git push origin arbennett:feature/update_summa; pip install .
+git clone -b develop https://github.com/UW-Hydro/pysumma.git; cd pysumma; git push origin arbennett:feature/update_summa; pip install .
 
 #cd ..; git clone -b develop https://github.com/NCAR/summa.git
 #cd summa; git checkout a3a840b139d80f645fe5acf31d32baad462a899b
