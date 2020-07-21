@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 ## clone pysumma and summa and switch to develop branch
 git clone -b develop https://github.com/DavidChoi76/pysumma.git; cd pysumma; pip install .
-cd ..; git clone -b develop https://github.com/NCAR/summa.git
-cd summa; git checkout a3a840b139d80f645fe5acf31d32baad462a899b
+#cd ..; git clone -b develop https://github.com/NCAR/summa.git
+#cd summa; git checkout a3a840b139d80f645fe5acf31d32baad462a899b
+cd ..; git clone https://github.com/NCAR/summa.git
 
 ## command to edit Makefile flags
-cd build && sed -i 's/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP)/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP) $(INCLUDES)/g' Makefile \
-	 && sed -i 's/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL)/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL) $(INCLUDES)/g' Makefile
+#cd build && sed -i 's/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP)/$(FC_EXE) $(FLAGS_NOAH) -c $(NOAHMP) $(INCLUDES)/g' Makefile \
+#	 && sed -i 's/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL)/$(FC_EXE) $(FLAGS_COMM) -c $(COMM_ALL) $(INCLUDES)/g' Makefile
 
 ## export necessary environment variables specified in Makefile
 export F_MASTER=/home/jovyan/summa
