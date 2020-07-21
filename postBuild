@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 ## clone pysumma and summa and switch to develop branch
+
 git clone -b arbennett:feature/update_summa https://github.com/arbennett/pysumma.git; cd pysumma; pip install .
 
 #cd ..; git clone -b develop https://github.com/NCAR/summa.git
