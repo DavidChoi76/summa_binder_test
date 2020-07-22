@@ -2,9 +2,9 @@
 ## clone pysumma and summa and switch to develop branch
 git clone https://github.com/UW-Hydro/pysumma.git; cd pysumma
 conda env create -f environment.yml
-conda activate pysumma
-python -m ipykernel install --user --name=pysumma
-python setup.py install
+#conda activate pysumma
+#python -m ipykernel install --user --name=pysumma; python setup.py install
+pip install .
 
 #cd ..; git clone -b develop https://github.com/NCAR/summa.git
 #cd summa; git checkout a3a840b139d80f645fe5acf31d32baad462a899b
