@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## clone and install pysumma
-git clone https://github.com/UW-Hydro/pysumma.git; cd pysumma
+git clone -b develop https://github.com/DavidChoi76/pysumma.git; cd pysumma
 conda env create -f environment.yml
 pip install .
 
