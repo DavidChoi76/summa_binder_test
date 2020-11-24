@@ -1,4 +1,4 @@
-# SUMMA_Binder
+# Approach-5-Binder-for-SUMMA-and-pySUMMA
 Try it on Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DavidChoi76/SUMMA_Binder/master/?urlpath=lab)
 
 A repository to build an environment in Binder that supports pySUMMA and SUMMA simulations.
