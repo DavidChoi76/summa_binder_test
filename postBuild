@@ -17,7 +17,7 @@ export LIBRARIES='-L/usr/lib -lnetcdff -lblas -llapack'
 
 ## build from Makefile
 make -f ${F_MASTER}/build/Makefile
-cp /home/jovyan/summa/bin/summa.exe /usr/bin/summa.exe
+#cp /home/jovyan/summa/bin/summa.exe /usr/bin/summa.exe
 
 # Install the JupyterLab dask-labextension
 jupyter labextension install dask-labextension@1.1.0
