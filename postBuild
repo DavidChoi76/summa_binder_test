@@ -2,7 +2,7 @@
 ## clone and install pysumma
 git clone https://github.com/UW-Hydro/pysumma.git; cd pysumma
 conda env create -f environment.yml
-pip install .
+#pip install .
 pip install geoviews
 
 ## clone and install summa
