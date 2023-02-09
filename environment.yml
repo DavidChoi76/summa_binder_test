@@ -28,3 +28,4 @@ dependencies:
   - pip:
     - hs_restclient
     - hs_client
+    - pysumma=3.0.3
