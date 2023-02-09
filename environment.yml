@@ -27,3 +27,4 @@ dependencies:
   - dask-ml
   - pip:
     - hs_restclient
+    - hs_client
